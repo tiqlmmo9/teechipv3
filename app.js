@@ -14,6 +14,7 @@ function toggle_visibility() {
     document.getElementById("placeholder").style.fontSize="0.8rem";
     document.getElementById("placeholder").style.transform="translateY(.3rem)";
     document.getElementById("search").style.border="none";
+    document.getElementById("search__icon").style.color="#FC6514";
     document.getElementById("line").style.display="block";
     // document.getElementById("search").style.outline="none";
     document.getElementById("search").style.borderRadius="2px";
