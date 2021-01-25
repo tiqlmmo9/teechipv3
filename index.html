@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".img/">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/teechip.svg" alt="" class="logo__img">
+        </div>
+        <div class="search" id="search">
+            <div class="header__icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- <input type="text" class="search__input" onclick="toggle_visibility('show-search');"  placeholder="What are you looking for?">
+             -->
+            <div class="search__transform" id="show-search">
+                <!-- <div class="search__transform__icon">
+                    <i class="fas fa-search"></i>
+                </div> -->
+                <div class="search__transform-item" id="item">
+                    <div class="search__placeholder" id="placeholder">
+                        What are you looking for?
+                    </div>
+                   
+                </div>
+                <div class="search-1">
+                    <div class="search-1-1">
+                            <input type="text" class="search__transform--input" id="input" onclick="toggle_visibility();"
+                            value="">
+                    </div>
+                </div>
+            </div>
+            <div class="click-outside" id="input-show">
+                    <div class="search__input-show" >
+                            <div class="search__popular">
+                                Popular Searches
+                            </div>
+                            <div class="search__popular-item">
+                                Family & Relationships
+                            </div>
+                            <div class="search__popular-item">
+                                Animals
+                            </div>
+                            <div class="search__popular-item">
+                                Jobs
+                            </div>
+                            <div class="search__popular-item">
+                                Places
+                            </div>
+                            <div class="search__popular-item search__popular-item--no-border">
+                                Holidays
+                            </div>
+                                
+                            
+                        </div>
+            </div>
+        </div>
+        <a href="" class="login">
+            <div class="header__icon">
+                <i class="fa fa-user"></i>
+                Login / Sign Up
+            </div>
+            
+            
+        </a>
+        <a href="" class="cart">
+            <div class="header__icon">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+        </a>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <a href="#"></a>Men</a>
+            <div class="menu-men">
+                    <div class="menu-men-item">
+                        <a href=""> <b>T-Shirts</b></a>
+                        <a href="">Classic Tees</a>
+                        <a href="">V-Neck Shirts</a>
+                        <a href="">Premium Fitted Tees</a>
+                        <a href="">All Over Unisex Shirts</a>
+                        <a href="">Classic Polo</a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Long Sleeves</b></a>
+                        <a href="">Lightweight Jacket</a>
+                        <a href="">Dress shirt</a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Tank Tops</b></a>
+                        <a href="">Unisex Tanks</a>
+                        <a href="">All Over Unisex Tanks</a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Footwear</b></a>
+                        <a href="">Socks</a>
+                        <a href="">Men's Shoes</a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Hoodies</b></a>
+                    </div>
+                    <div class="menu-men-item">
+                            <a href=""> <b>Sweatshirts</b></a>
+                        </div>
+                  
+                </div>
+        </div>
+        <div class="menu-item">
+            <a href="#"></a>Women</a>
+            <div class="menu-men">
+                    <div class="menu-men-item">
+                        <a href=""> <b>T-Shirts</b></a>
+                        <a href="">Ladies Tees</a>
+                        <a href="">Premium Fitted Ladies Tees</a>
+                        <a href="">All Over Unisex Shirts</a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Tank Tops</b></a>
+                        <a href="">Unisex Tanks</a>
+                        <a href="">All Over Unisex Tanks</a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Footwear</b></a>
+                        <a href="">Socks</a>
+                        <a href="">Women's Shoes</a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Long Sleeves</b></a>
+                        <a href=""> <b>Hoodies</b></a>
+                        <a href=""> <b>Sweatshirts</b></a>
+                    </div>
+                    <div class="menu-men-item">
+                        <a href=""> <b>Dresses</b></a>
+                        <a href=""> <b>Long Sleeves</b></a>
+                        <a href=""> <b>Leggings</b></a>
+                    </div>
+                                
+                  
+                </div>
+        </div>
+        <div class="menu-item">
+            <a href="#"></a>Youth & Baby</a>
+        </div>
+        <div class="menu-item">
+            <a href="#"></a>Home & Living</a>
+        </div>
+        <div class="menu-item">
+            <a href="#"></a>Accessories</a>
+        </div>
+        <div class="menu-item">
+            <a href="#"></a>Jewelry</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
