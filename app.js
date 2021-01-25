@@ -14,6 +14,7 @@ function toggle_visibility() {
     document.getElementById("placeholder").style.fontSize="0.8rem";
     document.getElementById("placeholder").style.transform="translateY(.3rem)";
     document.getElementById("search").style.border="none";
+    document.getElementById("line").style.display="block";
     // document.getElementById("search").style.outline="none";
     document.getElementById("search").style.borderRadius="2px";
     document.getElementById("search").style.boxShadow="0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19)";
@@ -39,9 +40,12 @@ window.onclick = function(event) {
         document.getElementById("search").style.borderRadius="5px";        
         document.getElementById("search").style.boxShadow="none";
         document.getElementById("search").style.border="solid 1px #B2BEC3";
+        document.getElementById("line").style.display="none";
         if(document.getElementById("input").value != ''){
             // document.getElementById("placeholder").style.color="#FC6514";
             document.getElementById("placeholder").style.fontSize="0.8rem";
+            
+
             // document.getElementById("placeholder").style.transform="translateY(+.05rem)";
         }
         else{
