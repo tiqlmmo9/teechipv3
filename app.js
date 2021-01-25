@@ -30,6 +30,9 @@ function closetodel(){
     // document.getElementById("placeholder").style.transform="translateY(+.75rem)";
     // document.getElementById("placeholder").style.fontSize="1rem";
 }
+function clicktologin(){
+    // document.getElementById("login").style.display="block";
+}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     var modal = document.getElementById("input-show");
