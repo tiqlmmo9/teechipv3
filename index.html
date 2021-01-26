@@ -9,39 +9,41 @@
     <link rel="stylesheet" href=".img/">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="ePlrwQu3"></script>
+
 </head>
 <body>
+    <!-- start header -->
     <div class="header">
-        <div class="header__list-items">
-            <div class="logo">
+        <div class="header__items">
+            <!-- start logo -->
+            <a href="" class="header__logo">
                 <img src="img/teechip.svg" alt="" class="logo__img">
-            </div>
-            <div class="search" id="search">
-                <div class="header__icon" id="search__icon">
+            </a>
+            <!-- end logo -->
+
+            <!-- start search -->
+            <div class="search" id="css_search">
+                <div class="header__icon" id="css_search_icon">
                     <i class="fas fa-search"></i>
                 </div>
-                <!-- <input type="text" class="search__input" onclick="toggle_visibility('show-search');"  placeholder="What are you looking for?">
-                 -->
-                <div class="search__transform" id="show-search">
-                    <!-- <div class="search__transform__icon">
-                        <i class="fas fa-search"></i>
-                    </div> -->
-                    <div class="search__transform-item" id="item">
-                        <div class="search__placeholder" id="placeholder">
+                <div class="search__transform" id="change_color_search">
+                    <div class="search__transform-item">
+                        <div class="search__placeholder" id="zoom_placeholder">
                             What are you looking for?
-                        </div>
-                        
+                        </div>  
                     </div>
-                    <div class="search-1">
-                        <input type="text" class="search__transform--input" id="input" onclick="toggle_visibility();"
+                    <div class="search__input">
+                        <input type="text" class="search__transform--input" id="text_input" onclick="toggle_visibility();"
                         value="">
-                        <div class="search-1-line" id="line"></div>
+                        <div class="search__input__line" id="input_line_bottom"></div>
                     </div>
-                    <div class="btn-close" id="btn-close" onclick="closetodel();">
+                    <div class="search__btn-close" id="btn_close_to_del" onclick="close_to_del();">
                         <i class="fas fa-times"></i>
                     </div>
                 </div>
-                <div class="search__input-show" id="input-show">
+                <!-- start popular searches -->
+                <div class="search__input-show" id="search_list">
                     <div class="search__input-show-list">
                         <div class="search__popular">
                             Popular Searches
@@ -62,29 +64,36 @@
                             Holidays
                         </div>
                     </div>
-                        
-                    
                 </div>
-                <div class="click-outside" id="closesearchlist">
-                        
+                <!-- end popular searches -->
+
+                <!-- create modal click anywhere to close search list -->
+                <div class="close-search-list" id="close_search_list">     
                 </div>
                 
             </div>
+            <!-- end search -->
+
+            <!-- start login -->
             <a href="" class="login">
-                <div class="header__icon" onclick="clicktologin();return false;">
+                <div class="header__icon" onclick="click_to_login(); return false;">
                     <i class="fas fa-user-circle"></i>
                     <p class="header__login-text">
                         Login / Sign Up
                     </p>
                 </div>
-                
-                
             </a>
+            <!-- end login -->
+            
+            <!-- start cart -->
             <a href="" class="cart">
                 <div class="header__icon">
                     <i class="fa fa-shopping-cart"></i>
                 </div>
             </a>
+            <!-- end cart -->
+
+            <!-- start menu -->
             <div class="menu">
                 <div class="menu-item">
                     <a href="#"></a>Men</Log>
@@ -167,11 +176,14 @@
                     <a href="#"></a>Jewelry</a>
                 </div>
             </div>
+            <!-- end menu -->
+
         </div>
-        <div class="shopper-login" id="login" >
+        <!-- start shopper login -->
+        <div class="shopper-login" id="shopper_login" >
             <div class="shopper-login__item">
-                <div class="shopper-login__1__btn-close">
-                    <i class="fas fa-times" onclick="clicktoclose();"></i>
+                <div class="shopper-login__btn-close">
+                    <i class="fas fa-times" onclick="click_to_close();"></i>
                 </div>
                 <div class="shopper-login__form">
                         <h1 class="shopper-login__form__heading">
@@ -198,11 +210,15 @@
                                 or continue width
                             </p>
                         </div>
-                        <button class="shopper-login-facebook-btn">
+                        
+                        <!-- <button class="shopper-login-facebook-btn">
                             <div class="shopper-login-facebook-btn__icon">
                                 <i class="fab fa-facebook-f"></i>
                             </div>
                             <a href="">Facebook</a>
+                        </button> -->
+                        <button class="shopper-login-facebook-btn">
+                            <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
                         </button>
                         <div class="shopper-login__policy">
                             By creating an account, you agree to TeeChip's
@@ -211,11 +227,12 @@
                         </div>
                 </div>
             </div>
-    </div>
+        </div>
+        <!-- end shopper login -->
     
         
     </div>
-    
+    <!-- end header -->
     <script src="app.js"></script>
 </body>
 </html>
