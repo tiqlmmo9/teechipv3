@@ -8,6 +8,7 @@ function toggle_visibility() {
     document.getElementById("show-search").style.color = "#FC6514";
     // document.getElementById("input").style.borderBottom = "1px solid #FC6514";
     document.getElementById("input-show").style.display="flex";
+    document.getElementById("closesearchlist").style.display="flex";
     // document.getElementById("placeholder").style.fontSize="0.8rem";
     // document.getElementById("placeholder").style.position="static";
     document.getElementById("placeholder").style.color="#FC6514";
@@ -31,13 +32,18 @@ function closetodel(){
     // document.getElementById("placeholder").style.fontSize="1rem";
 }
 function clicktologin(){
-    // document.getElementById("login").style.display="block";
+    document.getElementById("login").style.display="flex";
+    document.getElementById("input-show").style.display="none";
+}
+function clicktoclose(){
+    document.getElementById("login").style.display="none";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    var modal = document.getElementById("input-show");
+    var modal = document.getElementById("closesearchlist");
     if (event.target == modal) {
-        modal.style.display = "none";
+        document.getElementById("input-show").style.display = "none";
+        modal.style.display="none";
         // modal1.style.display = "none";
         document.getElementById("show-search").style.color = "#B2BEC3";
         // document.getElementById("input").style.borderBottom = "1px solid rgba(255, 255, 255, 0)";
@@ -65,6 +71,6 @@ window.onclick = function(event) {
         document.getElementById("placeholder").style.fontSize="1rem";
         }
     }
-    
+    // document.getElementById("login").style.display="block";
     
 }
