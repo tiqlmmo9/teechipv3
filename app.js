@@ -41,18 +41,32 @@ function newFunction() {
     btn_close_to_del.style.display = "none";
   }
 }
-newFunction();
 // Click icon x (close) to delete text input
 function close_to_del() {
   text_input.value = "";
   toggle_visibility(); //put mouse point input search
 }
-
+//Placeholder become normal
+function originPlaceholder() {
+  search_list.style.display = "none";
+  close_search_list.style.display = "none";
+  //Change color search style
+  change_color_search.style.color = "#B2BEC3";
+  //Change color placeholder text
+  zoom_placeholder.style.color = "#B2BEC3";
+  //Css search
+  css_search.style.borderRadius = "5px";
+  css_search.style.boxShadow = "none";
+  css_search.style.border = "solid 1px #B2BEC3";
+  css_search_icon.style.color = "#B2BEC3";
+  input_line_bottom.style.display = "none";
+}
 //click login/signup to open form login
 function click_to_login() {
   shopper_login.style.display = "flex";
-  /*Display none search list when click login/signup */
-  search_list.style.display = "none";
+  originPlaceholder();
+  zoom_placeholder.style.transform = "translateY(+.75rem)";
+  zoom_placeholder.style.fontSize = "1rem";
 }
 
 //click icon x (close) to close form shopper_login/signup
@@ -60,24 +74,12 @@ function click_to_close() {
   shopper_login.style.display = "none";
 }
 
+
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == close_search_list) {
-    search_list.style.display = "none";
-    close_search_list.style.display = "none";
-
-    //Change color search style
-    change_color_search.style.color = "#B2BEC3";
-
-    //Change color placeholder text
-    zoom_placeholder.style.color = "#B2BEC3";
-
-    //Css search
-    css_search.style.borderRadius = "5px";
-    css_search.style.boxShadow = "none";
-    css_search.style.border = "solid 1px #B2BEC3";
-    css_search_icon.style.color = "#B2BEC3";
-    input_line_bottom.style.display = "none";
+    originPlaceholder();
 
     // Display none shopper login form
     shopper_login.style.display = "none";
@@ -94,6 +96,7 @@ window.onclick = function(event) {
     }
   }
 };
+
 
 // LOGIN FACEBOOK
 function statusChangeCallback(response) {
