@@ -209,3 +209,8 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 // end slideshow
+
+// back to top
+function topFunction() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

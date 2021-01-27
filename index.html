@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href=".img/">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="ePlrwQu3"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0"
+        nonce="ePlrwQu3"></script>
 
 </head>
+
 <body>
     <div class="app">
         <!-- start header -->
         <div class="header">
-            <div class="header__items">
+            <div class="header__item">
                 <!-- start logo -->
                 <a href="" class="header__logo">
                     <img src="img/teechip.svg" alt="" class="logo__img">
                 </a>
                 <!-- end logo -->
-        
+
                 <!-- start search -->
                 <div class="search" id="css_search">
                     <div class="header__icon" id="css_search_icon">
@@ -35,9 +39,9 @@
                             </div>
                         </div>
                         <div class="search__input">
-                            <input type="text" class="search__transform--input" id="text_input" onclick="toggle_visibility();"
-                                value="">
-                            <div class="search__input__line" id="input_line_bottom"></div>
+                            <input type="text" class="search__transform--input" id="text_input"
+                                onclick="toggle_visibility();" value="">
+                            <div class="search-input__line" id="input_line_bottom"></div>
                         </div>
                         <div class="search__btn-close" id="btn_close_to_del" onclick="close_to_del();">
                             <i class="fas fa-times"></i>
@@ -67,14 +71,14 @@
                         </div>
                     </div>
                     <!-- end popular searches -->
-        
+
                     <!-- create modal click anywhere to close search list -->
                     <div class="close-search-list" id="close_search_list">
                     </div>
-        
+
                 </div>
                 <!-- end search -->
-        
+
                 <!-- start login -->
                 <a href="" class="login">
                     <div class="header__icon" onclick="click_to_login(); return false;">
@@ -85,100 +89,17 @@
                     </div>
                 </a>
                 <!-- end login -->
-        
+
                 <!-- start cart -->
                 <a href="" class="cart">
                     <div class="header__icon">
-                        <i class="fa fa-shopping-cart"></i>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
                 </a>
                 <!-- end cart -->
-        
-                <!-- start menu -->
-                <div class="menu">
-                    <div class="menu-item">
-                        <a href="#"></a>Men</Log>
-                        <div class="menu-men">
-                            <div class="menu-men-item">
-                                <a href=""> <b>T-Shirts</b></a>
-                                <a href="">Classic Tees</a>
-                                <a href="">V-Neck Shirts</a>
-                                <a href="">Premium Fitted Tees</a>
-                                <a href="">All Over Unisex Shirts</a>
-                                <a href="">Classic Polo</a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Long Sleeves</b></a>
-                                <a href="">Lightweight Jacket</a>
-                                <a href="">Dress shirt</a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Tank Tops</b></a>
-                                <a href="">Unisex Tanks</a>
-                                <a href="">All Over Unisex Tanks</a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Footwear</b></a>
-                                <a href="">Socks</a>
-                                <a href="">Men's Shoes</a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Hoodies</b></a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Sweatshirts</b></a>
-                            </div>
-        
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <a href="#"></a>Women</a>
-                        <div class="menu-women">
-                            <div class="menu-men-item">
-                                <a href=""> <b>T-Shirts</b></a>
-                                <a href="">Ladies Tees</a>
-                                <a href="">Premium Fitted Ladies Tees</a>
-                                <a href="">All Over Unisex Shirts</a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Tank Tops</b></a>
-                                <a href="">Unisex Tanks</a>
-                                <a href="">All Over Unisex Tanks</a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Footwear</b></a>
-                                <a href="">Socks</a>
-                                <a href="">Women's Shoes</a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Long Sleeves</b></a>
-                                <a href=""> <b>Hoodies</b></a>
-                                <a href=""> <b>Sweatshirts</b></a>
-                            </div>
-                            <div class="menu-men-item">
-                                <a href=""> <b>Dresses</b></a>
-                                <a href=""> <b>Long Sleeves</b></a>
-                                <a href=""> <b>Leggings</b></a>
-                            </div>
-        
-        
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <a href="#"></a>Youth & Baby</a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="#"></a>Home & Living</a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="#"></a>Accessories</a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="#"></a>Jewelry</a>
-                    </div>
-                </div>
-                <!-- end menu -->
-        
+
+
+
             </div>
             <!-- start shopper login -->
             <div class="shopper-login" id="shopper_login">
@@ -195,7 +116,8 @@
                             <a href="" class="seller-click">Click here</a>
                         </div>
                         <p class="shopper-login__advantage">
-                            Take advantage of the features and benefits that make shopping with TeeChip faster and easier.
+                            Take advantage of the features and benefits that make shopping with TeeChip faster and
+                            easier.
                         </p>
                         <button class="shopper-login-btn">
                             <a href="">Log In</a>
@@ -205,19 +127,19 @@
                         </button>
                         <div class="text-divider">
                             <div class="text-divider-line">
-        
+
                             </div>
                             <p class="text-divider__continue">
                                 or continue width
                             </p>
                         </div>
-        
+
                         <!-- <button class="shopper-login-facebook-btn">
-                                    <div class="shopper-login-facebook-btn__icon">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-                                    <a href="">Facebook</a>
-                                </button> -->
+                                                <div class="shopper-login-facebook-btn__icon">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <a href="">Facebook</a>
+                                            </button> -->
                         <button class="shopper-login-facebook-btn">
                             <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with"
                                 data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
@@ -231,64 +153,735 @@
                 </div>
             </div>
             <!-- end shopper login -->
-            
+
         </div>
         <!-- end header -->
-        
-        
-        <!-- Slideshow -->
-        
+
+        <!-- start menu -->
+        <div class="navigation">
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="#"></a>Men</Log>
+                    <div class="menu-men">
+                        <div class="menu-men-item">
+                            <a href=""> <b>T-Shirts</b></a>
+                            <a href="">Classic Tees</a>
+                            <a href="">V-Neck Shirts</a>
+                            <a href="">Premium Fitted Tees</a>
+                            <a href="">All Over Unisex Shirts</a>
+                            <a href="">Classic Polo</a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Long Sleeves</b></a>
+                            <a href="">Lightweight Jacket</a>
+                            <a href="">Dress shirt</a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Tank Tops</b></a>
+                            <a href="">Unisex Tanks</a>
+                            <a href="">All Over Unisex Tanks</a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Footwear</b></a>
+                            <a href="">Socks</a>
+                            <a href="">Men's Shoes</a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Hoodies</b></a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Sweatshirts</b></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#"></a>Women</a>
+                    <div class="menu-women">
+                        <div class="menu-men-item">
+                            <a href=""> <b>T-Shirts</b></a>
+                            <a href="">Ladies Tees</a>
+                            <a href="">Premium Fitted Ladies Tees</a>
+                            <a href="">All Over Unisex Shirts</a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Tank Tops</b></a>
+                            <a href="">Unisex Tanks</a>
+                            <a href="">All Over Unisex Tanks</a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Footwear</b></a>
+                            <a href="">Socks</a>
+                            <a href="">Women's Shoes</a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Long Sleeves</b></a>
+                            <a href=""> <b>Hoodies</b></a>
+                            <a href=""> <b>Sweatshirts</b></a>
+                        </div>
+                        <div class="menu-men-item">
+                            <a href=""> <b>Dresses</b></a>
+                            <a href=""> <b>Long Sleeves</b></a>
+                            <a href=""> <b>Leggings</b></a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#"></a>Youth & Baby</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"></a>Home & Living</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"></a>Accessories</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#"></a>Jewelry</a>
+                </div>
+            </div>
+        </div>
+        <!-- end menu -->
+    </div>
+
+    <div class="container">
+        <!-- start header -->
+
+        <!-- end header -->
         <div class="homepage">
+            <!-- start slideshow -->
             <div class="slideshow-container">
-        
+
                 <div class="mySlides fade">
                     <!-- <div class="numbertext">1 / 3</div> -->
                     <img src="img/baner1.jpeg" style="width:100%">
                     <!-- <div class="text">Caption Text</div> -->
                 </div>
-        
+
                 <div class="mySlides fade">
                     <!-- <div class="numbertext">2 / 3</div> -->
                     <img src="img/baner2.jpg" style="width:100%">
                     <!-- <div class="text">Caption Two</div> -->
                 </div>
-        
+
                 <div class="mySlides fade">
                     <!-- <div class="numbertext">3 / 3</div> -->
                     <img src="img/baner3.jpg" style="width:100%">
                     <!-- <div class="text">Caption Three</div> -->
                 </div>
-        
+
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
+
                 <div class="dot-item">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
-                
+
             </div>
+            <!-- end slideshow -->
             <div class="category">
                 <div class="category__text">
                     Featured Category
                 </div>
                 <div class="category__list">
-                    <div class="category__item"></div>
-                    <div class="category__item"></div>
-                    <div class="category__item"></div>
-                    <div class="category__item"></div>
-                    <div class="category__item"></div>
-                    <div class="category__item"></div>
+                    <div class="category__item">
+                        <div class="category__name">Shirts</div>
+                        <div class="category__img">
+                            <img src="img/shirts.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="category__name">Shirts</div>
+                        <div class="category__img">
+                            <img src="img/shirts.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="category__name">Shirts</div>
+                        <div class="category__img">
+                            <img src="img/shirts.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="category__name">Shirts</div>
+                        <div class="category__img">
+                            <img src="img/shirts.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="category__name">Shirts</div>
+                        <div class="category__img">
+                            <img src="img/shirts.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category__item">
+                        <div class="category__name">Shirts</div>
+                        <div class="category__img">
+                            <img src="img/shirts.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start product recommend -->
+            <div class="product-recommend">
+                <div class="product-recommend__text">
+                    Recommended For You
+                </div>
+                <div class="product-recommend__list">
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/january born.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__price">
+                                $28.95
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/january born.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__price">
+                                $28.95
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/january born.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__price">
+                                $28.95
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/january born.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__price">
+                                $28.95
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end product recommend -->
+
+            <!-- start featured collection -->
+            <div class="featured-collection">
+                <div class="featured-banner">
+                    <div class="featured-banner__img">
+                        <img src="img/featured_banner.jpg" alt="">
+                    </div>
+                    <div class="featured-banner__item">
+                        <div class="featured-banner__header">
+                            Valentine's Day
+                        </div>
+                        <div class="featured-banner__desc">
+                            Get a cute gift for your dearest!
+                        </div>
+                        <div class="shop-now">
+                            <div class="shop-now__text">
+                                Shop Now
+                            </div>
+                            <div class="shop-now__icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-collection__list">
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/allyouneedislove.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/allyouneedislove.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/allyouneedislove.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/allyouneedislove.jpg" alt="">
+                        </div>
+                        <div class="product__desc">
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- start product couples -->
+            <div class="product-couple">
+                <img src="img/couples.jpg" alt="">
+            </div>
+            <!-- end product couples -->
+
+            <!-- start product personable -->
+            <div class="product-personable">
+                <div class="product-personable__list">
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/personalizable.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/personalizable.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/personalizable.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/personalizable.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                                <span class="product__text-color">
+                                    2 colors
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end product personable -->
+
+            <!-- start custom mugs -->
+            <div class="custom-mug">
+                <div class="featured-collection__list">
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/custom-mug.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/custom-mug.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/custom-mug.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__item">
+                        <div class="product__img">
+                            <img src="img/custom-mug.jpg" alt="">
+                        </div>
+                        <div class="product-personal__icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <div class="product__desc">
+                            <div class="product-personalizable">
+                                Personalizable
+                            </div>
+                            <div class="product__name">
+                                January Born
+                            </div>
+                            <div class="product__featured">
+                                <div class="product__price">
+                                    $28.95
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-banner">
+                    <div class="featured-banner__img">
+                        <img src="img/custom-mug_banner.jpg" alt="">
+                    </div>
+                    <div class="featured-banner__item featured-banner__item--color">
+                        <div class="featured-banner__header">
+                            Custom Letter Mugs
+                        </div>
+                        <div class="featured-banner__desc">
+                            Put any name on it!
+                        </div>
+                        <div class="shop-now">
+                            <div class="shop-now__text">
+                                Make yours
+                            </div>
+                            <div class="shop-now__icon">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end custom mugs -->
+
+
+        </div>
+
+
+
+    </div>
+    <div class="coverable">
+        <!-- start back-to-top button -->
+        <div class="backtotop-btn" onclick="topFunction();">
+            <div class="backtotop-btn__text">Back To Top</div>
+
+            <div class="backtotop-btn__icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer__logo">
+                    <img src="img/teechip.svg" alt="">
+                </div>
+                <div class="footer__list">
+                    <div class="footer__item">
+                        <div class="footer-service">
+                            Service
+                        </div>
+                        <a href="" class="footer-service__text">
+                            About Us
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Track Order
+                        </a>
+                        <a href="" class="footer-service__text">
+                            FAQ
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Shipping & Return Polices
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Terms And Conditions
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Privacy Policy
+                        </a>
+                        <a href="" class="footer-service__text">
+                            DMCA
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer-service">
+                            Company
+                        </div>
+                        <a href="" class="footer-service__text">
+                            About Us
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Track Order
+                        </a>
+                        <a href="" class="footer-service__text">
+                            FAQ
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Shipping & Return Polices
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Terms And Conditions
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Privacy Policy
+                        </a>
+                        <a href="" class="footer-service__text">
+                            DMCA
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer-service">
+                            Need Help
+                        </div>
+                        <a href="" class="footer-service__text">
+                            About Us
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Track Order
+                        </a>
+                        <a href="" class="footer-service__text">
+                            FAQ
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Shipping & Return Polices
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Terms And Conditions
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Privacy Policy
+                        </a>
+                        <a href="" class="footer-service__text">
+                            DMCA
+                        </a>
+                        <a href="" class="footer-service__text">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <div class="select-box">
+                            <div class="select-box__item">
+                                English (United States)
+                            </div>
+                            <div class="select-box__icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="select-box">
+                            <div class="select-box__item">
+                                $ USD
+                            </div>
+                            <div class="select-box__icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="bbb-icon">
+                            <img src="img/bbb-icon.svg" alt="">
+                        </div>
+                        <div class="payment">
+                            <div class="payment__item">
+                                <img src="img/visa-icon.svg" alt="">
+                            </div>
+                            <div class="payment__item">
+                                <img src="img/mastercard-icon.svg" alt="">
+                            </div>
+                            <div class="payment__item">
+                                <img src="img/amex-icon.svg" alt="">
+                            </div>
+                            <div class="payment__item">
+                                <img src="img/discover-icon.svg" alt="">
+                            </div>
+                            <div class="payment__item">
+                                <img src="img/paypal-icon.svg" alt="">
+                            </div>
+                            <div class="payment__item">
+                                <img src="img/klarna-icon.svg" alt="">
+                            </div>
+                            <div class="payment__item">
+                                <img src="img/giropay-icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__about">
+                <div class="about__signature">
+                    © 2021 TeeChip
+                </div>
+                <div class="about-item">
+                    <div class="about-item__social">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="about-item__social">
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="about-item__social">
+                        <i class="fab fa-instagram"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        
-        
-        <!-- end slideshow -->
+        <!-- end back-to-top button -->
     </div>
-
     <script src="app.js"></script>
 </body>
+
 </html>
