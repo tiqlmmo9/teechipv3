@@ -422,6 +422,7 @@ body {
 
 .menu-item:hover {
   color: #fc6514;
+  cursor: pointer;
 }
 
 .menu-men {
@@ -516,6 +517,9 @@ body {
 .mySlides {
   display: none;
   /* overflow: hidden; */
+}
+.mySlides__link img{
+  width: 100%;
 }
 /* Next & previous buttons */
 .prev,
@@ -625,6 +629,7 @@ body {
   background: #d7ebfa;
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 .category__item:hover {
   box-shadow: 0 4px 5px 0 rgb(99 110 114 / 14%),
@@ -722,7 +727,7 @@ body {
 }
 .product__desc {
   height: 20%;
-  background-color: #fafa;
+  /* background-color: #fafa; */
   padding: 0.5rem 1rem 1rem;
 }
 .product-personalizable {
@@ -761,6 +766,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .featured-banner__img {
 }
@@ -811,7 +817,15 @@ body {
   overflow: hidden;
   margin-top: 4rem;
   margin-bottom: 2rem;
+  cursor: pointer;
+  display: flex;
+  position: relative;
 }
+.featured-banner__item--right-zero{
+  position: absolute;
+  right: 0;
+}
+/* product personable */
 .product-personable {
   height: 444px;
 }
@@ -832,7 +846,7 @@ body {
   grid-column-gap: 35px;
   /* background-color: #ccc; */
 }
-.featured-banner__item--color {
+.featured-banner__item--black {
   color: #000;
 }
 
@@ -931,6 +945,7 @@ body {
 }
 .bbb-icon {
   height: 50px;
+  cursor: pointer;
 }
 .payment {
   width: 232px;
@@ -944,6 +959,7 @@ body {
 .payment__item {
   width: 37px;
   height: 24px;
+  cursor: pointer;
 }
 
 /* about */
