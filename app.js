@@ -93,6 +93,7 @@ window.onclick = function(event) {
       zoom_placeholder.style.fontSize = "1rem";
 
       text_input.value = ""; //delete whitespace to mouse pointer returns to the first position
+      btn_close_to_del.style.display = "none";
     }
   }
 };
