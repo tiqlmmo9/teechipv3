@@ -80,7 +80,6 @@ function click_to_close() {
 window.onclick = function(event) {
   if (event.target == close_search_list) {
     originPlaceholder();
-
     // Display none shopper login form
     shopper_login.style.display = "none";
 
